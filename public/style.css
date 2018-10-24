@@ -1,0 +1,164 @@
+html, body {
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 60px 11rem 11rem 11rem 40px;
+    grid-gap: 0px;
+}
+.menu {
+    background: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.sidebar {
+    width: 100%;
+    background: #eae2cf;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 1/2;
+}
+.konten1{
+    background: #82cef1;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    grid-column: 2/5;
+    transition: all .2s;
+    position: relative;
+}
+.konten1:hover {
+    background: #4db7e8;
+}
+
+.konten2{
+    background: #25d47e;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    grid-column: 2/5;
+    transition: all .2s;
+}
+.konten2:hover {
+    background: #11c56d;
+}
+
+.konten3{
+    background: #d87b7b;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    grid-column: 2/5;
+    transition: all .2s;
+}
+.konten3:hover {
+    background: #dc6565;
+}
+
+.konten1-hid {
+   display: none;
+   background: #4db7e8;
+   grid-column: 2/5;
+}
+.active {
+    display: block;
+}
+.inactive {
+    display: none;
+}
+
+.footer {
+    background: lightblue;
+    text-align: center;
+    padding: 10px;       
+    grid-column: 1/5;
+    grid-row : 5/5;
+}  
+
+.img-sidebar{
+    width: 500px;
+    padding: 25%;
+    height: auto;
+    max-width: 40%;
+}
+
+.ico{
+    max-width: 50%;
+    float: left;
+    height: auto;
+    padding-right: 30px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.link {
+    font-size: 1.2rem;
+    color: #fff;
+}
+.link:hover {
+    font-size: 1.2rem;
+    color: #00567d;
+}
+.text{
+    color: white;
+    padding-top: 15px;
+}
+h3 {
+    color: white;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    text-align: center;
+}
+.calc {
+    text-align: center;
+    color: #fff;
+}
+input {
+    font-size: 1.2rem;
+    color: #999;
+}
+a {
+    text-decoration: none;
+}
+.text a{
+    color: white;
+    font-weight: bold;         
+    font-family: "Lato",sans-serif;
+}
+.image-ico{
+    max-width: 100%;
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 60px 150px 150px 150px 40px;
+        grid-gap: 0px;
+    }
+    .konten1, .konten2, .konten3{
+        padding: 10px;
+    }
+    .ico{
+        max-width: 30%;
+        float:none;
+        text-align: center;
+    }
+    .image-ico{
+        text-align: center;
+        padding-right: 0px;
+    }
+    .text{
+        text-align: center;
+    }
+}
