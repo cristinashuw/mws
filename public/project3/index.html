@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initialscale=1">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+</head> 
+<body>
+    <h1 style="text-align: center;">Vegetarian Foodies in Batam</h1>
+
+	<div class='container'>
+		<div class='peta' id='mapid'></div>
+		<div class='gambar' id='gmb'>Photo's here</div>
+    <div class='review' id='review'>Review's here</div> 
+    <div class="footer">
+      <div class='footer'>&copy 2018 | Cristina</div>
+    </div>
+	</div>
+</body>
+<script type="text/javascript">
+
+    // blank grey square
+    var mymap = L.map('mapid').setView([1.134683, 104.025593], 13);
+    // end blank grey square
+
+    // googlemaps view
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets', //try change to 'mapbox.satellite' if you want satellite view
+      accessToken: 'pk.eyJ1IjoiY3Jpc3RpbmFzaHV3IiwiYSI6ImNqbTh4Z204ejA3aGszd25ucHF1Y2Nnam8ifQ.jQfziSVlnniC-6WrnGJzPQ' // include accessToken (https://www.mapbox.com/account/access-tokens/)
+    }).addTo(mymap);
+    // end google maps view
+
+    // marker start
+    var obean = L.marker([1.133706, 104.034231]).addTo(mymap);
+    var sweet = L.marker([1.130622, 104.035382]).addTo(mymap);
+    var chengxin = L.marker([1.136206, 104.013780]).addTo(mymap);
+    var joyful = L.marker([1.135173, 104.009448]).addTo(mymap);
+    var deloving = L.marker([1.134048, 104.009529]).addTo(mymap);
+    var nature = L.marker([1.127249, 104.006167]).addTo(mymap);
+    var simple = L.marker([1.131787, 104.007927]).addTo(mymap);
+    var skytastes = L.marker([1.127270, 104.006199]).addTo(mymap);
+    var meixiang = L.marker([1.133669, 104.033794]).addTo(mymap);
+    // marker end
+
+    // circle start ()
+    var circle = L.circle([1.151518, 104.013226], {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 500
+    }).addTo(mymap);
+    // circle end
+
+    // polygon start
+    var polygon = L.polygon([
+      [1.129791, 103.924656],
+      [1.133041, 103.927917],
+      [1.133041, 103.935986],
+      [1.130049, 103.939247],
+      [1.12446, 103.939934],
+      [1.120169, 103.936329],
+      [1.124632, 103.924999]
+    ]).addTo(mymap);
+    // polygon end
+
+    
+    // // alert function
+    // function onMapClick(e) {
+    //   alert("You clicked the map at " + e.latlng);
+    // }
+
+    // mymap.on('click', onMapClick);
+    // // end alert
+
+    // // popup information (rather than alert)
+    // var popup = L.popup();
+
+    // function onMapClick(e) {
+    //     popup
+    //         .setLatLng(e.latlng)
+    //         .setContent("You clicked the map at " + e.latlng.toString())
+    //         .openOn(mymap);
+    // }1.134048, 104.009529
+
+    // mymap.on('click', onMapClick);
+    // // end popup info
+
+  </script>
+<script src="map.js"></script>
+</html> 

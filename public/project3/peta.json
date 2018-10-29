@@ -1,0 +1,57 @@
+{
+	"places":[
+		{
+			"lokasi": [1.133706, 104.034231],
+			"sponsor" : "Obean Vegetarian Restaurant",
+			"gambar":"../images/obean.jpg",
+			"review": "Rumah Makan terkenal paling mahal dan populer di Batam."
+		},
+		{
+			"lokasi": [1.130622, 104.035382],
+			"sponsor" : "Sweet Veggie",
+			"gambar":"../images/sweet.jpg",
+			"review": "Tempat Cafe yang paling nyaman dan ramai."
+		},
+		{
+			"lokasi": [1.136206, 104.013780],
+			"sponsor" : "Cheng Xin Wellness",
+			"gambar":"../images/chengxin.jpg",
+			"review": "Tempat Makan Vegetarian dekat BCS Mall, samping Lovina Inn."
+		},
+		{
+			"lokasi": [1.135173, 104.009448],
+			"sponsor" : "Joyful Vegetarian",
+			"gambar":"../images/joyful.jpg",
+			"review": "Restoran Nasi Padang yang Enak."
+		},
+		{
+			"lokasi": [1.134048, 104.009529],
+			"sponsor" : "De Loving Hut",
+			"gambar":"../images/de-loving-hut.jpg",
+			"review": "Restoran dengan Kualitas Makanan Enak yang ada di dalam BCS Mall."
+		},
+		{
+			"lokasi": [1.127249, 104.006167],
+			"sponsor" : "Restaurant Nature Vegetarian",
+			"gambar":"../images/nature.jpg",
+			"review": "Restoran Nasi Padang yang Elite."
+		},
+		{
+			"lokasi": [1.131787, 104.007927],
+			"sponsor" : "Simple",
+			"gambar":"../images/simple.jpg",
+			"review": "Tempat nongkrong yang enak, nyaman, dan murah."
+		},
+		{
+			"lokasi": [1.127270, 104.006199],
+			"sponsor" : "Skytastes Vegetarian Cuisine",
+			"gambar":"../images/skytaste.jpg",
+			"review": "Restoran Vegetarian Cuisine termahal di Batam."
+		},
+		{
+			"lokasi": [1.133669, 104.033794],
+			"sponsor" : "Mei Xiang Vegetarian",
+			"gambar":"../images/meixiang.jpg",
+			"review": "Kedai Kopi yang Enak"
+		}
+	]}
