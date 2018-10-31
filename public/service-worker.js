@@ -8,7 +8,11 @@
 	'style.css',
 	'project1/calc.js',
 	'project2/leafletmap.html',
-	'project2/css/mystyle.css'
+	'project2/css/mystyle.css',
+	'project3/index.html',
+	'project3/map.js',
+	'project3/mystyle.css',
+	'project3/peta.json'
   ];
 
   var staticCacheName = 'pages-cache-v1';
